@@ -1,0 +1,104 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ===== 本地配置与密钥 =====
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# ===== 模型与运行产物 =====
+model_cache/
+models/*.tmp
+models/*.onnx
+models/*_real.joblib
+runs/
+logs/
+
+# ===== 训练中间产物 =====
+*.pth
+*.pkl
+*.h5
+*.ckpt
+scaler.pkl
+
+# ===== 本地运行产物 =====
+*.db
+*.db-journal
+*.sqlite3
+*.log
+
+# ===== 数据：真实数据集与任何可反推个体的文件，严禁提交 =====
+daic_woz_data/
+DAIC-WOZ/
+data/raw/
+data/private/
+data/interim/
+data/processed/
+labels/
+labels2019/
+full_split.csv
+*.transcript
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.zip
+
+# ===== 预测与特征产物（含 participant 标识）=====
+predictions.json
+pred_dict.json
+qwen_daic_phq8_merged.csv
+*qwen*merged*.csv
+qwen_knowledge_base.jsonl
+
+# ===== 前端 =====
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+.npm-cache/
+.npmrc
+
+# ===== 编辑器与系统 =====
+.idea/
+.vscode/
+.codeartsdoer/
+.arts/
+.snapshots/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== Windows 离线安装包 =====
+wheels/
+*.whl
+setup_and_run.bat
+install_gpu_pytorch.bat
+
+# ===== 允许提交的例外 =====
+!data/demo/
+!data/demo/**
+!models/*.joblib
+!models/README.md
+# ===== 本地技能与部署产物（不入库）=====
+.skills/
+.auto-deploy/
+_*.sh
+_*.py
+set_aksk.bat
+models/phq8_model_synthetic_backup.joblib
+
+# ===== 打包临时产物 =====
+.tmp_*
+tmp_skill_pkg/

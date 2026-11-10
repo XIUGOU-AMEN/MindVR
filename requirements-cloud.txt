@@ -1,0 +1,9 @@
+# 开发与测试
+pytest==8.3.3
+ruff==0.6.9
+
+# 仅云端部署时需要（华为云 OBS / SIS 官方 SDK）
+# 安装：pip install -r requirements-cloud.txt
+esdk-obs-python==3.24.3
+huaweicloudsdkcore==3.1.111
+huaweicloudsdksis==3.1.111
