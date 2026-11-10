@@ -102,3 +102,5 @@ models/phq8_model_synthetic_backup.joblib
 # ===== 打包临时产物 =====
 .tmp_*
 tmp_skill_pkg/
+# 赛题对照材料（答辩用，不入库）
+docs/answer-mapping.md
